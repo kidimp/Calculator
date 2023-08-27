@@ -1,10 +1,11 @@
 /**
  * Для работы программы необходимо скачать и подгрузить модуль JavaFX.
  * File - Project Structure - Libraries - From Maven, в строке поиска вводим fx,
- * далее из списка выбираем org.openjfx:javafx-fxml:11.0.2
+ * далее из списка выбираем org.openjfx:javafx-fxml:19.0.2
  * Устанавливаем в папку с программой.
  * В Run - Edit Configurations - VM options прописываем
  * --module-path "/Users/pras/IdeaProjects/Calculator/lib" --add-modules javafx.controls,javafx.fxml
+ * --module-path "C:\Users\Chous\IdeaProjects\Calculator\lib" --add-modules javafx.controls,javafx.fxml
  */
 
 
@@ -41,8 +42,8 @@ public class Calculator extends Application {
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             // Устанавливаем ширину и высоту окна
-            primaryStage.setWidth(450);
-            primaryStage.setHeight(405);
+            primaryStage.setWidth(468);
+            primaryStage.setHeight(417);
             // Устанавливаем, что нельзя изменить размер окна
             primaryStage.setResizable(false);
             // Вызов метода для добавления компонента
